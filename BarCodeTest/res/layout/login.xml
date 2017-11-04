@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歡迎使用手機版掃描槍"
+            android:textColor="#F81"
+            android:textSize="27dp" />
+
+        <TextView
+            android:id="@+id/tv_ip_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP:"
+            android:textColor="#F81"
+            android:textSize="15dp" />
+
+        <ToggleButton
+            android:id="@+id/btn_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textOff="作業員"
+            android:textOn="管理員" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PassWord:"
+                android:textColor="#000"
+                android:textSize="15dp" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_password"
+                android:ems="10"
+                android:inputType="textPassword" 
+                android:visibility="gone">
+
+                <requestFocus />
+                
+            </EditText>
+            
+        </RelativeLayout>
+        
+        <Button 
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="登錄"/>
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>
